@@ -4,10 +4,17 @@
 # +----+
 # |    |
 # +----+
-"""
-A Function that takes a list or generator and draws a border around it.
-"""
 def AsciiBorder(content, width, footer=False, height=3):
+    """Generator to encapsulate some array or generator with an border made from ascii characters.
+    :param content: content you want to encapsulate
+    :type content: list
+    :param width: width border regardless of content width
+    :type width: int
+    :param footer: draw a second box below the main one
+    :type footer: boolean
+    :param height: the height of the second footer box
+    :type height: int
+    """
     yield "+" + ("-" * (width - 2)) + "+"
     for line in content:
         if len(line) == width - 2:
@@ -23,6 +30,10 @@ def AsciiBorder(content, width, footer=False, height=3):
 
 # TODO: Elegant unicode magic :-)
 def get_style(style="double"):
+    """takes a Style and return a set of border characters.
+    :param style: the style you want to pick
+    :type style: str
+    """
     if style == "double":
         return "╔", "╚", "╗", "╝", "║", "═", "╣", "╠"
     elif style == "bold":
@@ -34,6 +45,18 @@ def get_style(style="double"):
 
 
 def BoxCaracterBorder(content, width, footer=False, height=3, style="double"):
+    """Generator to encapsulate some content with border characters.
+    :param content: the content you want to encapsulate
+    :type content: list
+    :param width: width of the border regardless of content width
+    :type width: int
+    :param footer: draw a second box below the main one
+    :type footer: boolean
+    :param height: height of the second footer box
+    :type height: int
+    :param style: the style of the border
+    :type style: str
+    """
     clu, cld, cru, crd, ver, hor, lcr, rcr = get_style(style)
     yield clu + (hor * (width - 2)) + cru
     for line in content:
