@@ -6,6 +6,7 @@
 # +----+
 def AsciiBorder(content, width, footer=False, height=3):
     """Generator to encapsulate some array or generator with an border made from ascii characters.
+    
     :param content: content you want to encapsulate
     :type content: list
     :param width: width border regardless of content width
@@ -46,6 +47,7 @@ def get_style(style="double"):
 
 def BoxCaracterBorder(content, width, footer=False, height=3, style="double"):
     """Generator to encapsulate some content with border characters.
+
     :param content: the content you want to encapsulate
     :type content: list
     :param width: width of the border regardless of content width
@@ -73,6 +75,17 @@ def BoxCaracterBorder(content, width, footer=False, height=3, style="double"):
 
 # TODO: Make a border that is a spacer!
 def SpaceBorder(content, width, x_thickness, y_thickness):
+    """Generator to encapsulate content with spaces
+
+    :param content: The content to encapsulate
+    :type content: list
+    :param width: width of the border
+    :type width: int
+    :param x_thickness: count of spaces right and left
+    :type x_thickness: int
+    :param y_thickness: anount of blank lines
+    :type y_thickness: int
+    """
     pass
 
 

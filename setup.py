@@ -8,7 +8,7 @@ setuptools.setup(
     version='0.1',
     srcipts=[],
     author='Neo Cortex',
-    author_email='',
+    author_email='sschmelz64@gmail.com',
     description='Creates Images for Stream overlays that look like terminal ui',
     long_description=long_description,
     url='https://github.com/StefanSchmelz/StreamOverlay',
