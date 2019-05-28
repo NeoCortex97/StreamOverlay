@@ -7,9 +7,9 @@ This tool uses Python and will use the PIL fork pillow to render text to an imag
 
 ## ToDo:
 
-[ ] Generate ascii border.
-[ ] Generate unicode Border using border characters.
-[ ] Generate Boxes with random Box characters.
+[X] Generate ascii border.
+[X] Generate unicode Border using border characters.
+[X] Generate Boxes with random Box characters.
 [ ] Calculate character count depending on image size and font size.
 [ ] Genrate Image from text.
 [ ] Draw nicer shapes with pillow drawing functions.
