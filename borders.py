@@ -6,7 +6,7 @@
 # +----+
 def AsciiBorder(content, width, footer=False, height=3):
     """Generator to encapsulate some array or generator with an border made from ascii characters.
-    
+
     :param content: content you want to encapsulate
     :type content: list
     :param width: width border regardless of content width
