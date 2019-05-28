@@ -7,15 +7,15 @@ This tool uses Python and will use the PIL fork pillow to render text to an imag
 
 ## ToDo:
 
-[X] Generate ascii border.
-[X] Generate unicode Border using border characters.
-[X] Generate Boxes with random Box characters.
-[ ] Calculate character count depending on image size and font size.
-[ ] Genrate Image from text.
-[ ] Draw nicer shapes with pillow drawing functions.
-[ ] Add configuration file.
-[ ] Enable multiple config files.
-[ ] Make overlay structure configurable via config file.
-[ ] Create a script for OBS-Studio to setup scenes based on the output of the generator.
-[ ] Enable Automatic update of the overlay.
-[ ] Future work. . .
+[X] Generate ascii border.  
+[X] Generate unicode Border using border characters.  
+[X] Generate Boxes with random Box characters.  
+[ ] Calculate character count depending on image size and font size.  
+[ ] Genrate Image from text.  
+[ ] Draw nicer shapes with pillow drawing functions.  
+[ ] Add configuration file.  
+[ ] Enable multiple config files.  
+[ ] Make overlay structure configurable via config file.  
+[ ] Create a script for OBS-Studio to setup scenes based on the output of the generator.  
+[ ] Enable Automatic update of the overlay.  
+[ ] Future work. . .  
